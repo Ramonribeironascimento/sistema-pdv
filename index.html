@@ -1,0 +1,227 @@
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+    <title>TESTE</title>
+</head>
+
+<body>
+    <form >
+
+
+
+
+        <header>
+            <div>
+                <img src="img/radih1.png" alt="Logotipo" class="product-image" />
+            </div>
+
+            <div class="cabec">
+                <h1>Sistema de PDV</h1>
+            </div>
+
+            <div class="lista">
+                <ul class="cabec-links">
+                    <li id="product-link1"><a href="../caixa_abertura/index.php?PGM_ORIGEM=venda_form1">Abrir Caixa</a>
+                    </li>
+                    <li id="product-link2"><a
+                            href="../GER50C/index.php?TIPO_CFTV=&LUPA_G=&&PGM_ORIGEM=venda_form1">Clientes</a></li>
+                    <li id="product-link3"><a
+                            href="../GER05C/index.php?LUPA_G=&TIPO_G=0&PGM_ORIGEM=venda_form1">Produtos</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="container">
+
+            <section class="produtoform">
+                <form >
+                     <label for="produto">Produto:</label>
+                    <input  type="text" name="name_produtoform1" id="produtoform1" class="produtoform_class"
+             onfocusout="Function_produto()" /> 
+
+                    
+                    <a id="cap_sc_field_produto" class="scButton_disabledSCImage " title="Buscar dados externos"
+                        style="vertical-align: middle; display:inline-block;" data-element-display="inline-block"
+                        onclick="scModalCapture('../GER05C/?script_case_init=9871&amp;nmgp_parms=@SC_par@9871@SC_par@form_teste@SC_par@5824d67f8aeb8f5ea55a56717e2f26c5&amp;SC_lig_apl_orig=form_teste&amp;KeepThis=true&amp;TB_iframe=true&amp;height=500&amp;width=1300&amp;modal=true'); return false;"><img
+                            id="id_img_cap_produto"
+                            src="img/lupa.png"
+                            style="border-width: 0; cursor: pointer"></a>
+
+                    <input type="hidden" class="produtoform_class"  />
+
+
+
+                    <!--<div id="operations">
+        <div>
+          <input id="current-operation" type="text"/>
+        </div>
+     </div>-->
+
+                    <a href="../venda_excluir/index.php?vg_venda_id=[ID_G]&PGM_ORIGEM=venda_form1"
+                        class="product-button" id="product-button1">Excluir Venda</a>
+                    <a href="../venda_detalhe/index.php?vg_venda_id=[ID_G]&PGM_ORIGEM=venda_form1"
+                        class="product-button" id="product-button2">Editar Itens</a>
+                    <!--<button onclick="itens_Function([ID_G])" class="product-button" id="product-button2">Itens</button>-->
+                    <a href="../venda_cpf/index.php?vg_venda_id=[ID_G]&PGM_ORIGEM=venda_form1" class="product-button"
+                        id="product-button3">Informar Cliente/CPF</a>
+                    <a href="../venda_pagamento_online/index.php?vg_venda_id=[ID_G]&PGM_ORIGEM=venda_form1&PEDIDO_G=0"
+                        class="product-button" id="product-button4">Fazer Pagamento</a>
+
+                </form>
+            </section>
+
+
+
+
+            <div class="relative">
+
+                <div class="absolute">
+
+                    <section class="products-container">
+
+                        <div id="calc">
+                            <div id="operations">
+                                <!--            <div id="previous-operation"></div> -->
+                                <div id="current-operation"></div>
+                            </div>
+                            <div id="buttons-container">
+                                <button>CE</button>
+                                <button>$</button>
+                                <button>ENTER</button>
+                                <!--<button onclick="enter_Function([ID_G])">ENTER</button>-->
+                                <button class="number">7</button>
+                                <button class="number">8</button>
+                                <button class="number">9</button>
+                                <button class="number">4</button>
+                                <button class="number">5</button>
+                                <button class="number">6</button>
+                                <button class="number">1</button>
+                                <button class="number">2</button>
+                                <button class="number">3</button>
+                                <button class="number">0</button>
+                                <button>.</button>
+                                <button>*</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+
+
+            <div class="relative1">
+                <div class="absolute1">
+
+                    <section class="tabela-container">
+
+                        <div class="divTable blueTable">
+                            <div class="divTableHeading">
+                                <div class="divTableRow">
+                                    <div class="divTableHead">Descrição</div>
+                                    <div class="divTableHead">Quantidade</div>
+                                    <div class="divTableHead">Preço</div>
+                                    <div class="divTableHead">Desconto</div>
+                                    <div class="divTableHead">Total</div>
+                                </div>
+                            </div>
+                            <div class="divTableBody">
+                                <div class="divTableRow">
+                                    <div class="divTableCell" id="divTableCell1">[cell1_1]</div>
+                                    <div class="divTableCell" id="divTableCell11"></div>
+                                    <div class="divTableCell"></div>
+                                    <div class="divTableCell"></div>
+                                    <div class="divTableCell"></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell" id="divTableCell2">[cell1_2]</div>
+                                    <div class="divTableCell" id="divTableCell12"></div>
+                                    <div class="divTableCell"></div>
+                                    <div class="divTableCell"></div>
+                                    <div class="divTableCell"></div>
+                                </div>
+                                <div class="divTableRow">
+                                    <div class="divTableCell" id="divTableCell3">[cell1_3]</div>
+                                    <div class="divTableCell" id="divTableCell13"></div>
+                                    <div class="divTableCell"></div>
+                                    <div class="divTableCell"></div>
+                                    <div class="divTableCell"></div>
+                                </div>
+
+
+                                <div class="divTableRow">
+                                    <div class="divTableCell" id="divTableCell4">[cell1_4]</div>
+                                    <div class="divTableCell" id="divTableCell14"></div>
+                                    <div class="divTableCell"></div>
+                                    <div class="divTableCell"></div>
+                                    <div class="divTableCell"></div>
+                                </div>
+
+                                <div class="divTableRow">
+                                    <div class="divTableCell" id="divTableCell5">[cell1_5]</div>
+                                    <div class="divTableCell" id="divTableCell15"></div>
+                                    <div class="divTableCell"></div>
+                                    <div class="divTableCell"></div>
+                                    <div class="divTableCell"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+            <div class="relative2">
+                <div class="absolute2">
+                    <section class="totais-container">
+                        <table>
+                            <tr>
+                                <form id="totalform">
+                                    <label for="totalform1">Total das Vendas:</label>
+                                    <input type="text" name="name_totalform1" id="totalform1" class="produtoform_class"
+                                         disabled="" />
+
+                                    <label for="totalform2">Nº Itens</label>
+                                    <input type="text" name="name_totalform2" id="totalform2" class="produtoform_class"
+                                         disabled="" />
+                                </form>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+            </div>
+
+
+            <div class="relative3">
+                <div class="absolute3">
+
+                    <section class="imagem-container">
+                        <table>
+                            <tr>
+                                <img src='img/radih1.png' alt="Logotipo" class="product-image" style="width:425px;height:180px"
+                                    ; />
+                            </tr>
+                        </table>
+                    </section>
+
+                </div>
+            </div>
+
+
+        </main>
+
+        <rodape>
+            <div class="footer">
+                <p>&copy; 2024 RADIH TECHNOLOGY SYSTEM . Todos os direitos reservados.</p>
+            </div>
+        </rodape>
+ 
+    </form>
+</body>
+
+</html>
