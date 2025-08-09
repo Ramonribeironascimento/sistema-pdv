@@ -22,7 +22,7 @@ PHP<br>
 Banco de dados Mysql ou postgresql <br>
 
 ## INSTRUÇAO DE USO
-O Sitema de PDV necessita de uma licença. Entre em contato em site.radih.com.br e escolha o plano com o melhor custo benefício.
+O Sitema de PDV necessita de uma licença. Entre em contato pelo [https://site.radih.com.br](https://site.radih.com.br/) e escolha o plano com o melhor custo benefício.
 
 
 ## O que aprendi:
