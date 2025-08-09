@@ -1,0 +1,14 @@
+# PROJETO: Sistema de PDV
+
+## DESCRIÇÃO
+
+## INSTRUCAO DE INSTALAÇAO
+
+### PRÉ REQUESITOS
+
+## NODE
+## GIT ETC...
+
+### ETAPAS
+
+## INSTRUÇAO DE USO
